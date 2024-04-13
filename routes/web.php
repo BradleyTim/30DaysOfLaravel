@@ -7,5 +7,9 @@ Route::get('/', function () {
 });
 
 Route::get('about', function() {
-    return 'ABOUT US';
+    return view('about');
+});
+
+Route::get('contact', function() {
+    return view('contact');
 });

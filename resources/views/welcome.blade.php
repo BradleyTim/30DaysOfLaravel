@@ -4,8 +4,12 @@
     <ul>
         @foreach($jobs as $job)
             <li>
-                {{ $job->title - $job->salary }}
+                {{ $job->title}}  - pays {{ $job->salary }} per year.
             </li>
         @endforeach
     </ul>
+
+    <div>
+        {{ $jobs->links() }}
+    </div>
 </x-layout>
